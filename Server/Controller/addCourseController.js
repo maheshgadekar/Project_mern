@@ -10,7 +10,7 @@ const addCourse = async (req, res) => {
       return res.status(400).json({ message: "Course already exists" });
     }
     if (!courseCode || !courseName || !maximumMarks) {
-      return res.status(400).json({ message: "all fields are required" });
+      return res.status(400).json({ message: "all fields  ___are required" });
     } else {
       courseModel.create({
         courseCode,
